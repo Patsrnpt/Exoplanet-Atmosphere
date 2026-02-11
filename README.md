@@ -36,7 +36,7 @@ Within each object folder, files are organized by observation geometry and physi
 The spectral data is subdivided based on the following physical models:
 * **Magnetic Models:** Includes non-magnetic (0G) and magnetic (3G) configurations.
 * **Wind Profiles:** Differentiated between static atmospheres (Spec_0) and those with active wind speeds (Spec_1).
-* **Chemical Species:** Separated by detectable ranges, specifically CO (Infrared) and H2O (Visible).
+* **Chemical Species:** Separated by detectable ranges, specifically CO (IR: Infrared) and H2O (VIS: Visible).
 
 Once you have identified the appropriate data folder for your analysis, you are ready to use the scripts provided in this repository.
 
