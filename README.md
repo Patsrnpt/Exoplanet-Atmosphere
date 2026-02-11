@@ -19,3 +19,27 @@ The **scope** package is used to simulate ground-based, High-Resolution Cross-Co
 By comparing these two cases, this project aims to quantify the impact of spectral resolution on our ability to map the climates of worlds beyond our solar system accurately.
 
 ## Quick Start
+Before you begin, there are two primary data structures within this repository that you should be familiar with:
+
+### 1. [Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)
+This folder contains the baseline simulations. It focuses on two specific planets: **WASP-76b** and **WASP-121b**. While WASP-76b includes multiple magnetic models, WASP-121b serves as the primary object of study for this research.
+
+### 2. [Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)
+This folder is utilized after the ideal data analysis is complete. This dataset is integrated with the **scope** package to account for the observational and environmental factors mentioned above.
+
+### Data Classification and File Naming
+Within each object folder, files are organized by observation geometry and physical parameters:
+
+* **Emission:** Data representing the light emitted from the planet's own atmosphere, typically observed during secondary eclipse.
+* **Transmission:** Data representing the stellar light filtered through the planet's atmosphere, observed as the planet passes in front of the host star.
+
+The spectral data is subdivided based on the following physical models:
+* **Magnetic Models:** Includes non-magnetic (0G) and magnetic (3G) configurations.
+* **Wind Profiles:** Differentiated between static atmospheres (Spec_0) and those with active wind speeds (Spec_1).
+* **Chemical Species:** Separated by detectable ranges, specifically CO (Infrared) and H2O (Visible).
+
+Once you have identified the appropriate data folder for your analysis, you are ready to use the scripts provided in this repository.
+
+---
+
+If you have any questions or would like to collaborate, feel free to contact me at: [sphoom22@terpmail.umd.edu](mailto:sphoom22@terpmail.umd.edu).
