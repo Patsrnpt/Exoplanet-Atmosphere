@@ -18,4 +18,4 @@ The **scope** package is used to simulate ground-based, High-Resolution Cross-Co
 
 By comparing these two cases, this project aims to quantify the impact of spectral resolution on our ability to map the climates of worlds beyond our solar system accurately.
 
-**Quick Start**
+## Quick Start
