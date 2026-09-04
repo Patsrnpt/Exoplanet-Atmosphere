@@ -35,7 +35,6 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 - [Data Structure](#data-structure)
 - [File Naming Convention](#file-naming-convention)
 - [Quick Start](#quick-start)
-- [Results](#results)
 - [Contact](#contact)
 
 ---
@@ -113,12 +112,6 @@ pip install -r requirements.txt
 ```
 
 Once you've identified the appropriate data folder for your analysis (see [Data Structure](#data-structure) above), you're ready to run the analysis scripts provided in this repository.
-
----
-
-## Results
-
-*(Coming soon: this section will include comparison plots of Doppler shift measurements between the Ideal and Real cases, along with a summary of how spectral resolution impacts derived wind speeds.)*
 
 ---
 
