@@ -1,6 +1,6 @@
 # How Does Spectral Resolution Influence Net Doppler Shifts?
 
-*Mapping wind speeds in exoplanet atmospheres, and how the instruments we use shape what we're able to see.*
+*Mapping wind speeds in exoplanet atmospheres and how the instruments we use shape what we're able to see.*
 
 *Specifically: finding the relationship between wind speed, spectral resolution, orbital phase, and magnetic field model.*
 
@@ -29,8 +29,6 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 ---
 
 ## Table of Contents
-
-- [Overview](#overview)
 - [The Two Phases of This Project](#the-two-phases-of-this-project)
   - [Phase 1: The Ideal Case](#phase-1-the-ideal-case)
   - [Phase 2: The Real Case](#phase-2-the-real-case)
@@ -42,15 +40,9 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 
 ---
 
-## Overview
-
-This project investigates how an instrument's **spectral resolution** affects our measurement of **horizontal wind speeds** in exoplanet atmospheres. By studying **net Doppler shifts**, the frequency shifts caused by atmospheric motion, I'm evaluating how data quality shapes the physical parameters we derive from observations.
-
-The project unfolds in two phases: an idealized baseline, followed by a realistic, noise-included simulation. Comparing the two shows where, and how much, spectral resolution matters.
-
----
-
 ## The Two Phases of This Project
+
+Building or accessing instruments across a full range of spectral resolutions isn't feasible right now, so this project relies on modeling the atmosphere directly. Instead of observing the same planet at many different resolutions, we simulate what those observations would look like, and study how the resolution changes what we recover.
 
 ### Phase 1: The Ideal Case
 
