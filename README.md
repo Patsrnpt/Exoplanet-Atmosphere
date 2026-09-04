@@ -46,17 +46,18 @@ Building or accessing instruments across a full range of spectral resolutions is
 
 ### Phase 1: The Ideal Case
 
-This phase uses an **"Ideal" dataset** to establish a clean baseline for the atmospheric signal, with no external noise or environmental complications. It's a pure look at the underlying atmospheric physics, deliberately ignoring:
-
-* **Telluric Absorptions**: signal interference caused by Earth's own atmosphere
-* **System Dynamics**: the planet's motion, including orbit and proper motion
-* **Instrument Efficiency**: the signal-to-noise ratio (SNR) limits of real hardware
+This phase uses an **"Ideal" dataset** to establish a clean baseline for the atmospheric signal, with no external noise or environmental complications. It's a pure look at the underlying atmospheric physics.
 
 ### Phase 2: The Real Case
 
 This phase moves toward realistic observing conditions using **[scope](https://scope-astr.readthedocs.io/en/latest/)**, a package maintained by Arjun Savel at the University of Maryland, College Park.
 
-**scope** simulates ground-based, **High-Resolution Cross-Correlation Spectroscopy (HRCCS)** of exoplanet atmospheres, reintroducing the complexity that Phase 1 leaves out, so the dataset reflects what a real telescope would record.
+**scope** simulates ground-based, **High-Resolution Cross-Correlation Spectroscopy (HRCCS)** of exoplanet atmospheres, reintroducing the complexity that Phase 1 leaves out, so the dataset reflects what a real telescope would record. The simulation includes:
+
+* **Telluric Absorptions**: signal interference caused by Earth's own atmosphere
+* **System Dynamics**: the planet's motion, including orbit and proper motion
+* **Instrument Efficiency**: the signal-to-noise ratio (SNR) limits of real hardware
+* **Blaze Function**: the wavelength-dependent throughput of the spectrograph's grating, which shapes the continuum of the observed spectrum
 
 > Comparing the Ideal and Real cases quantifies how spectral resolution affects our ability to map the climates of worlds beyond our solar system.
 
