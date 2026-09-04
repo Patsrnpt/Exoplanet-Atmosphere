@@ -30,8 +30,8 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 
 ## Table of Contents
 - [The Two Phases of This Project](#the-two-phases-of-this-project)
-  - [Phase 1: The Ideal Case](#phase-1-the-ideal-case)
-  - [Phase 2: The Real Case](#phase-2-the-real-case)
+  - [Phase 1: The Ideal Data](#phase-1-the-ideal-data)
+  - [Phase 2: The Real Data](#phase-2-the-real-sata)
 - [Data Structure](#data-structure)
 - [File Naming Convention](#file-naming-convention)
 - [Quick Start](#quick-start)
@@ -44,11 +44,11 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 
 Building or accessing instruments across a full range of spectral resolutions isn't feasible right now, so this project relies on modeling the atmosphere directly. Instead of observing the same planet at many different resolutions, we simulate what those observations would look like, and study how the resolution changes what we recover.
 
-### Phase 1: The Ideal Case
+### Phase 1: The Ideal Data
 
 This phase uses an **"Ideal" dataset** to establish a clean baseline for the atmospheric signal, with no external noise or environmental complications. It's a pure look at the underlying atmospheric physics.
 
-### Phase 2: The Real Case
+### Phase 2: The Real Data
 
 This phase moves toward realistic observing conditions using **[scope](https://scope-astr.readthedocs.io/en/latest/)**, a package maintained by Arjun Savel at the University of Maryland, College Park. For further information, see [Savel et al. 2024](https://arxiv.org/abs/2411.07303).
 
