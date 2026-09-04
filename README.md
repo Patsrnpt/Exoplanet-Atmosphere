@@ -50,7 +50,7 @@ This phase uses an **"Ideal" dataset** to establish a clean baseline for the atm
 
 ### Phase 2: The Real Case
 
-This phase moves toward realistic observing conditions using **[scope](https://scope-astr.readthedocs.io/en/latest/)**, a package maintained by Arjun Savel at the University of Maryland, College Park.
+This phase moves toward realistic observing conditions using **[scope](https://scope-astr.readthedocs.io/en/latest/)**, a package maintained by Arjun Savel at the University of Maryland, College Park. For further information, see [Savel et al. 2024](https://arxiv.org/abs/2411.07303).
 
 **scope** simulates ground-based, **High-Resolution Cross-Correlation Spectroscopy (HRCCS)** of exoplanet atmospheres, reintroducing the complexity that Phase 1 leaves out, so the dataset reflects what a real telescope would record. The simulation includes:
 
