@@ -117,10 +117,9 @@ Once you've identified the appropriate data folder for your analysis (see [Data 
 
 ## Contact
 
-I'd love to hear from you, whether you have questions or spot something worth fixing.
-
 **Sarunyapat (Pat) Phoompuang**
 Master's Student, Physics, Imperial College London
 [sphoom22@terpmail.umd.edu](mailto:sphoom22@terpmail.umd.edu)
 
 **Research Advisor:** Dr. Hayley Beltz, Postdoctoral Associate, University of Kansas
+[hbeltz@ku.edu](mailto:hbeltz@ku.edu)
