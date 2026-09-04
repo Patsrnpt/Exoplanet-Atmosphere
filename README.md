@@ -2,6 +2,8 @@
 
 *Mapping wind speeds in exoplanet atmospheres — and how the instruments we use shape what we're able to see.*
 
+*Specifically: finding the relationship between wind speed, spectral resolution, orbital phase, and magnetic field model.*
+
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
