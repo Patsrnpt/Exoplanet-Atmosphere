@@ -36,7 +36,7 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 - [File Naming Convention](#file-naming-convention)
 - [Quick Start](#quick-start)
 - [Results](#results)
-- [Contact & Collaboration](#contact--collaboration)
+- [Contact](#contact)
 
 ---
 
