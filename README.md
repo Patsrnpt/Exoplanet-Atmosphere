@@ -1,6 +1,6 @@
 # How Does Spectral Resolution Influence Net Doppler Shifts?
 
-*Mapping wind speeds in exoplanet atmospheres — and how the instruments we use shape what we're able to see.*
+*Mapping wind speeds in exoplanet atmospheres, and how the instruments we use shape what we're able to see.*
 
 *Specifically: finding the relationship between wind speed, spectral resolution, orbital phase, and magnetic field model.*
 
@@ -14,7 +14,7 @@
 
 Hi, I'm **Sarunyapat (Pat) Phoompuang**. I am a Master's student in Physics at **Imperial College London**. This repository documents research I began in the summer of 2025 at the **University of Maryland, College Park**, conducted under the guidance of **Dr. Hayley Beltz**, a postdoctoral associate at the **University of Kansas**.
 
-The core question I'm chasing: *when we measure wind speeds on exoplanets by tracking Doppler shifts, how much does the resolution of our instrument distort what we see?* Real telescopes are noisy, imperfect, and limited — so before we trust what they tell us about alien weather, we need to know how much of the signal is real atmosphere and how much is instrumental artifact.
+The core question I'm chasing: *when we measure wind speeds on exoplanets by tracking Doppler shifts, how much does the resolution of our instrument distort what we see?* Real telescopes are noisy, imperfect, and limited, so before we trust what they tell us about alien weather, we need to know how much of the signal is real atmosphere and how much is instrumental artifact.
 
 If you're curious about the project, want to dig into the data, or want to chat about exoplanet atmospheres, feel free to reach out. My contact info is at the bottom.
 
@@ -44,7 +44,7 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 
 ## Overview
 
-This project investigates how an instrument's **spectral resolution** affects our measurement of **horizontal wind speeds** in exoplanet atmospheres. By studying **net Doppler shifts** — the frequency shifts caused by atmospheric motion — I'm evaluating how data quality shapes the physical parameters we derive from observations.
+This project investigates how an instrument's **spectral resolution** affects our measurement of **horizontal wind speeds** in exoplanet atmospheres. By studying **net Doppler shifts**, the frequency shifts caused by atmospheric motion, I'm evaluating how data quality shapes the physical parameters we derive from observations.
 
 The project unfolds in two phases: an idealized baseline, followed by a realistic, noise-included simulation. Comparing the two shows where, and how much, spectral resolution matters.
 
@@ -56,9 +56,9 @@ The project unfolds in two phases: an idealized baseline, followed by a realisti
 
 This phase uses an **"Ideal" dataset** to establish a clean baseline for the atmospheric signal, with no external noise or environmental complications. It's a pure look at the underlying atmospheric physics, deliberately ignoring:
 
-* **Telluric Absorptions** — signal interference caused by Earth's own atmosphere
-* **System Dynamics** — the planet's motion, including orbit and proper motion
-* **Instrument Efficiency** — the signal-to-noise ratio (SNR) limits of real hardware
+* **Telluric Absorptions**: signal interference caused by Earth's own atmosphere
+* **System Dynamics**: the planet's motion, including orbit and proper motion
+* **Instrument Efficiency**: the signal-to-noise ratio (SNR) limits of real hardware
 
 ### Phase 2: The Real Case
 
@@ -81,14 +81,14 @@ There are two primary data folders in this repository:
 
 Within each object folder, files are organized by **observation geometry**:
 
-* **Emission** — light emitted from the planet's own atmosphere, observed during secondary eclipse
-* **Transmission** — stellar light filtered through the planet's atmosphere, observed during transit
+* **Emission**: light emitted from the planet's own atmosphere, observed during secondary eclipse
+* **Transmission**: stellar light filtered through the planet's atmosphere, observed during transit
 
 ...and further subdivided by physical model:
 
-* **Magnetic Models** — non-magnetic (`0G`) vs. magnetic (`3G`) configurations
-* **Wind Profiles** — static atmospheres (`Spec_0`) vs. active wind speeds (`Spec_1`)
-* **Chemical Species** — CO (infrared, IR) vs. H₂O (visible, VIS)
+* **Magnetic Models**: non-magnetic (`0G`) vs. magnetic (`3G`) configurations
+* **Wind Profiles**: static atmospheres (`Spec_0`) vs. active wind speeds (`Spec_1`)
+* **Chemical Species**: CO (infrared, IR) vs. H₂O (visible, VIS)
 
 ---
 
@@ -125,7 +125,7 @@ Once you've identified the appropriate data folder for your analysis (see [Data 
 
 ## Results
 
-*(Coming soon — this section will include comparison plots of Doppler shift measurements between the Ideal and Real cases, along with a summary of how spectral resolution impacts derived wind speeds.)*
+*(Coming soon: this section will include comparison plots of Doppler shift measurements between the Ideal and Real cases, along with a summary of how spectral resolution impacts derived wind speeds.)*
 
 ---
 
@@ -134,7 +134,7 @@ Once you've identified the appropriate data folder for your analysis (see [Data 
 I'd love to hear from you, whether you have questions, spot something worth fixing, or want to collaborate.
 
 **Sarunyapat (Pat) Phoompuang**
-Master's Student, Physics — Imperial College London
+Master's Student, Physics, Imperial College London
 [sphoom22@terpmail.umd.edu](mailto:sphoom22@terpmail.umd.edu)
 
-**Research Advisor:** Dr. Hayley Beltz, Postdoctoral Associate — University of Kansas
+**Research Advisor:** Dr. Hayley Beltz, Postdoctoral Associate, University of Kansas
