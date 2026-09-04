@@ -121,7 +121,7 @@ Once you've identified the appropriate data folder for your analysis (see [Data 
 
 ---
 
-## Contact & Collaboration
+## Contact
 
 I'd love to hear from you, whether you have questions or spot something worth fixing.
 
