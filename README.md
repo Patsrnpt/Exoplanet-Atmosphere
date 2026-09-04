@@ -70,7 +70,7 @@ There are two primary data folders in this repository:
 | Folder | Purpose |
 |---|---|
 | **[Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)** | Baseline simulations, no noise. Covers **WASP-76b** (multiple magnetic models) and **WASP-121b** (primary object of study). |
-| **[Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)** | Realistic simulations, used after the ideal analysis is complete. Integrates the **scope** package to add observational and environmental effects. |
+| **[Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)** | Input data prepared to match the spectral resolution expected by the **scope** package. Like the Ideal Data, it doesn't yet include any realistic observational effects. This is the dataset that gets passed through **scope** to produce the simulated spectra. |
 
 Within each object folder, files are organized by **observation geometry**:
 
