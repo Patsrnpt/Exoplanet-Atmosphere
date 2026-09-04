@@ -131,7 +131,7 @@ Once you've identified the appropriate data folder for your analysis (see [Data 
 
 ## Contact & Collaboration
 
-I'd love to hear from you, whether you have questions, spot something worth fixing, or want to collaborate.
+I'd love to hear from you, whether you have questions or spot something worth fixing.
 
 **Sarunyapat (Pat) Phoompuang**
 Master's Student, Physics, Imperial College London
