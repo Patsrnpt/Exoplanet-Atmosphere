@@ -100,15 +100,15 @@ This reads as: **WASP-121b**, **transmission** geometry, **non-magnetic** model,
 ## Quick Start
 
 ```bash
-# Clone the repository
+# clone the repository
 git clone https://github.com/Patsrnpt/Exoplanet-Atmosphere.git
 cd Exoplanet-Atmosphere
 
-# (Recommended) set up a virtual environment
+# (recommended) set up a virtual environment
 python -m venv venv
 source venv/bin/activate  # on Windows: venv\Scripts\activate
 
-# Install dependencies
+# install dependencies
 pip install -r requirements.txt
 ```
 
