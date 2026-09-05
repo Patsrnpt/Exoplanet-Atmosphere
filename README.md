@@ -103,7 +103,9 @@ Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat
 
 This reads as: **wind profile** (`Spec_0`), **planet** (WASP-121b), **magnetic model** (`0G`, non-magnetic), **chemical species** (`IR`, meaning CO), **orbital phase** (`phase_0.0`), and **inclination** (`inc_00.00.0000.00`).
 
-[View example file](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
+[View example file: Doppler off](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
+
+[View example file: Doppler on](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_1_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
 
 **WASP-76b:**
 
