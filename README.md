@@ -96,19 +96,11 @@ This reads as: **WASP-121b**, **transmission** geometry, **non-magnetic** model,
 
 ---
 
-## Quick Start
+## Getting the Data
 
 ```bash
-# clone the repository
 git clone https://github.com/Patsrnpt/Exoplanet-Atmosphere.git
 cd Exoplanet-Atmosphere
-
-# (recommended) set up a virtual environment
-python -m venv venv
-source venv/bin/activate  # on Windows: venv\Scripts\activate
-
-# install dependencies
-pip install -r requirements.txt
 ```
 
 Once you've identified the appropriate data folder for your analysis (see [Data Structure](#data-structure) above), you're ready to run the analysis scripts provided in this repository.
