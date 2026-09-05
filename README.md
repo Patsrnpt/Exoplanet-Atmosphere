@@ -71,12 +71,19 @@ There are two primary data folders in this repository:
 | **[Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)** | Baseline simulations, no noise. Covers **WASP-76b** (multiple magnetic models) and **WASP-121b** (primary object of study). |
 | **[Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)** | Input data prepared to match the spectral resolution expected by the **scope** package. Like the Ideal Data, it doesn't yet include any realistic observational effects. This is the dataset that gets passed through **scope** to produce the simulated spectra. |
 
-Within each object folder, files are organized by **observation geometry**:
+Within each object folder, files are organized by **observation geometry**: emission or transmission.
 
-* **Emission**: light emitted from the planet's own atmosphere, observed during secondary eclipse
-* **Transmission**: stellar light filtered through the planet's atmosphere, observed during transit
+An emission spectrum comes from the planet's dayside. The planet's own atmosphere emits light, and we observe it during secondary eclipse. A transmission spectrum, on the other hand, is detected during transit, when the planet passes in front of the star and blocks its light, so we cannot see the planet directly. However, some starlight passes through the atmosphere at the terminator, the boundary between the planet's day side and night side. Molecules in the atmosphere absorb this light at specific wavelengths, producing an absorption spectrum.
 
-...and further subdivided by physical model:
+The table below summarizes the difference:
+
+| | Emission | Transmission |
+|---|---|---|
+| **When observed** | Secondary eclipse (planet passes behind the star) | Transit (planet passes in front of the star) |
+| **What we see** | Light emitted from the planet's dayside | Starlight filtered through the planet's atmosphere at the terminator |
+| **How it works** | The planet's own atmosphere emits light, producing the emission spectrum | The planet blocks direct starlight, but some light passes through the atmosphere at the terminator, where molecules absorb specific wavelengths, producing an absorption spectrum |
+
+Files are further subdivided by physical model:
 
 * **Magnetic Models**: non-magnetic (`0G`) vs. magnetic (`3G`) configurations
 * **Wind Profiles**: static atmospheres (`Spec_0`) vs. active wind speeds (`Spec_1`)
