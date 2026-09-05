@@ -7,6 +7,7 @@
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Last Commit](https://img.shields.io/github/last-commit/Patsrnpt/Exoplanet-Atmosphere)
 
 ---
 
@@ -65,16 +66,6 @@ This phase moves toward realistic observing conditions using **[scope](https://s
 
 There are two primary data folders in this repository:
 
-```
-Exoplanet-Atmosphere/
-├── Ideal Data/
-│   ├── WASP-76b/
-│   └── WASP-121b/
-└── Scope Data/
-    ├── WASP-76b/
-    └── WASP-121b/
-```
-
 | Folder | Purpose |
 |---|---|
 | **[Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)** | Baseline simulations, no noise. Covers **WASP-76b** (multiple magnetic models) and **WASP-121b** (primary object of study). |
@@ -120,7 +111,7 @@ Files follow a consistent pattern combining the categories above, but the exact 
 
 **WASP-121b:**
 
-```
+```text
 Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat
 ```
 
@@ -128,7 +119,7 @@ This reads as: **wind profile** (`Spec_0`), **planet** (WASP-121b), **magnetic m
 
 **WASP-76b:**
 
-```
+```text
 Wasp76b-0G-Fefull_0.dat
 ```
 
