@@ -42,14 +42,6 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 
 Building or accessing instruments across a full range of spectral resolutions isn't feasible right now, so this project relies on modeling the atmosphere directly. Instead of observing the same planet at many different resolutions, we simulate what those observations would look like, and study how the resolution changes what we recover.
 
-```mermaid
-flowchart LR
-    A[Ideal Data] --> B[Phase 1: Ideal Case]
-    C[Scope Data] --> D[Phase 2: Real Case via scope]
-    B --> E[Comparison: Ideal vs Real]
-    D --> E
-```
-
 ### Phase 1: The Ideal Data
 
 This phase uses an **"Ideal" dataset** to establish a clean baseline for the atmospheric signal, with no external noise or environmental complications. It's a pure look at the underlying atmospheric physics.
@@ -73,10 +65,23 @@ This phase moves toward realistic observing conditions using **[scope](https://s
 
 There are two primary data folders in this repository:
 
+```
+Exoplanet-Atmosphere/
+├── Ideal Data/
+│   ├── WASP-76b/
+│   └── WASP-121b/
+└── Scope Data/
+    ├── WASP-76b/
+    └── WASP-121b/
+```
+
 | Folder | Purpose |
 |---|---|
 | **[Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)** | Baseline simulations, no noise. Covers **WASP-76b** (multiple magnetic models) and **WASP-121b** (primary object of study). |
 | **[Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)** | Input data prepared to match the spectral resolution expected by the **scope** package. Like the Ideal Data, it doesn't yet include any realistic observational effects. This is the dataset that gets passed through **scope** to produce the simulated spectra. |
+
+> [!NOTE]
+> Scope Data is not a separate dataset. It's the Ideal Data reformatted to match the spectral resolution expected by the `scope` package, which is then passed through `scope` to produce the Real Case in Phase 2.
 
 The two planets in this study are not treated identically:
 
