@@ -103,10 +103,6 @@ Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat
 
 This reads as: **wind profile** (`Spec_0`), **planet** (WASP-121b), **magnetic model** (`0G`, non-magnetic), **chemical species** (`IR`, meaning CO), **orbital phase** (`phase_0.0`), and **inclination** (`inc_00.00.0000.00`).
 
-[View example file: Doppler off](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
-
-[View example file: Doppler on](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_1_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
-
 **WASP-76b:**
 
 ```
@@ -114,10 +110,6 @@ Wasp76b-0G-Fefull_0.dat
 ```
 
 This reads as: **planet** (WASP-76b), **magnetic model** (`0G`, non-magnetic), **chemical species and Doppler setting** (`Fefull_0`).
-
-[View example file: Doppler off](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-76b/W76b_transmission/W76b_0G/Dop_OFF/Wasp76b-0G-Fefull_0.dat)
-
-[View example file: Doppler on](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-76b/W76b_transmission/W76b_0G/Dop_ON/Wasp76b-0G-Fefull_0dat)
 
 The trailing number distinguishes the Doppler setting: `_0` for Doppler off, `_1` for Doppler on.
 
