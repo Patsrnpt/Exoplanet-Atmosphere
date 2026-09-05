@@ -31,10 +31,9 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 ## Table of Contents
 - [The Two Phases of This Project](#the-two-phases-of-this-project)
   - [Phase 1: The Ideal Data](#phase-1-the-ideal-data)
-  - [Phase 2: The Real Data](#phase-2-the-real-sata)
+  - [Phase 2: The Real Data](#phase-2-the-real-data)
 - [Data Structure](#data-structure)
 - [File Naming Convention](#file-naming-convention)
-- [Quick Start](#quick-start)
 - [Contact](#contact)
 
 ---
@@ -42,6 +41,14 @@ This project's comparison between the Ideal and Real cases is a way of probing t
 ## The Two Phases of This Project
 
 Building or accessing instruments across a full range of spectral resolutions isn't feasible right now, so this project relies on modeling the atmosphere directly. Instead of observing the same planet at many different resolutions, we simulate what those observations would look like, and study how the resolution changes what we recover.
+
+```mermaid
+flowchart LR
+    A[Ideal Data] --> B[Phase 1: Ideal Case]
+    C[Scope Data] --> D[Phase 2: Real Case via scope]
+    B --> E[Comparison: Ideal vs Real]
+    D --> E
+```
 
 ### Phase 1: The Ideal Data
 
@@ -71,6 +78,14 @@ There are two primary data folders in this repository:
 | **[Ideal Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Ideal%20Data)** | Baseline simulations, no noise. Covers **WASP-76b** (multiple magnetic models) and **WASP-121b** (primary object of study). |
 | **[Scope Data](https://github.com/Patsrnpt/Exoplanet-Atmosphere/tree/main/Scope%20Data)** | Input data prepared to match the spectral resolution expected by the **scope** package. Like the Ideal Data, it doesn't yet include any realistic observational effects. This is the dataset that gets passed through **scope** to produce the simulated spectra. |
 
+The two planets in this study are not treated identically:
+
+| | WASP-76b | WASP-121b |
+|---|---|---|
+| **Role in this project** | Multiple magnetic models tested | Primary object of study |
+| **Magnetic models** | Non-magnetic (`0G`) and magnetic (`3G`) | Non-magnetic (`0G`) and magnetic (`3G`) |
+| **Observation geometry** | Transmission | Emission |
+
 Within each object folder, files are organized by **observation geometry**: emission or transmission.
 
 An emission spectrum comes from the planet's dayside. The planet's own atmosphere emits light, and we observe it during secondary eclipse. A transmission spectrum, on the other hand, is detected during transit, when the planet passes in front of the star and blocks its light, so we cannot see the planet directly. However, some starlight passes through the atmosphere at the terminator, the boundary between the planet's day side and night side. Molecules in the atmosphere absorb this light at specific wavelengths, producing an absorption spectrum.
@@ -93,7 +108,10 @@ Files are further subdivided by physical model:
 
 ## File Naming Convention
 
-Files follow a consistent pattern combining the categories above, but the exact format differs between planets. Here's how to read each one.
+Files follow a consistent pattern combining the categories above, but the exact format differs between planets.
+
+<details>
+<summary>Click to expand: how to read WASP-76b and WASP-121b filenames</summary>
 
 **WASP-121b:**
 
@@ -112,6 +130,8 @@ Wasp76b-0G-Fefull_0.dat
 This reads as: **planet** (WASP-76b), **magnetic model** (`0G`, non-magnetic), **chemical species and Doppler setting** (`Fefull_0`).
 
 The trailing number distinguishes the Doppler setting: `_0` for Doppler off, `_1` for Doppler on.
+
+</details>
 
 ---
 
