@@ -79,8 +79,8 @@ The two planets in this study are not treated identically:
 | | WASP-76b | WASP-121b |
 |---|---|---|
 | **Role in this project** | Multiple magnetic models tested | Primary object of study |
-| **Magnetic models** | Non-magnetic (`0G`) and magnetic (`3G`) | Non-magnetic (`0G`) and magnetic (`3G`) |
-| **Observation geometry** | Transmission | Emission |
+| **Magnetic models** | Non-magnetic (`0G`), magnetic (`3G`), and uniform | Non-magnetic (`0G`) and magnetic (`3G`) |
+| **Observation geometry** | Transmission only | Emission and transmission |
 
 Within each object folder, files are organized by **observation geometry**: emission or transmission.
 
