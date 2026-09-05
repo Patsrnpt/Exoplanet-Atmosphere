@@ -93,24 +93,30 @@ Files are further subdivided by physical model:
 
 ## File Naming Convention
 
-Files follow a consistent pattern combining the categories above. For example:
+Files follow a consistent pattern combining the categories above, but the exact format differs between planets. Here's how to read each one.
+
+**WASP-121b:**
 
 ```
-WASP121b_Transmission_0G_Spec1_CO.fits
+Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat
 ```
 
-This reads as: **WASP-121b**, **transmission** geometry, **non-magnetic** model, **active wind** profile, **CO** species.
+This reads as: **wind profile** (`Spec_0`), **planet** (WASP-121b), **magnetic model** (`0G`, non-magnetic), **chemical species** (`IR`, meaning CO), **orbital phase** (`phase_0.0`), and **inclination** (`inc_00.00.0000.00`).
 
----
+[View example file](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-121b/W121b_emission/W121b_0G/Dop_OFF/IR/Spec_0_asp-121b-0G_IR_phase_0.0_inc_00.00.0000.00.dat)
 
-## Getting the Data
+**WASP-76b:**
 
-```bash
-git clone https://github.com/Patsrnpt/Exoplanet-Atmosphere.git
-cd Exoplanet-Atmosphere
+```
+Wasp76b-0G-Fefull_0.dat
 ```
 
-Once you've identified the appropriate data folder for your analysis (see [Data Structure](#data-structure) above), you're ready to run the analysis scripts provided in this repository.
+This reads as: **planet** (WASP-76b), **magnetic model** (`0G`, non-magnetic), **chemical species and Doppler setting** (`Fefull_0`).
+
+[View example file, Doppler off](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-76b/W76b_transmission/W76b_0G/Dop_OFF/Wasp76b-0G-Fefull_0.dat)
+[View example file, Doppler on](https://github.com/Patsrnpt/Exoplanet-Atmosphere/blob/main/Ideal%20Data/WASP-76b/W76b_transmission/W76b_0G/Dop_ON/Wasp76b-0G-Fefull_0dat)
+
+The trailing number distinguishes the Doppler setting: `_0` for Doppler off, `_1` for Doppler on.
 
 ---
 
