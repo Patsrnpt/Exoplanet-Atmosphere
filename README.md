@@ -19,6 +19,8 @@ The core question I'm chasing: *when we measure wind speeds on exoplanets by tra
 
 If you're curious about the project, want to dig into the data, or want to chat about exoplanet atmospheres, feel free to reach out. My contact info is at the bottom.
 
+A step-by-step tutorial walking through the code, including how cross-correlation is used to detect molecular composition and measure wind speed, is available here: **[Tutorial Site](https://patsrnpt.github.io/Exoplanet-Atmosphere/intro.html)**.
+
 ---
 
 ## Why This Matters
